@@ -1,0 +1,5 @@
+[
+	{"name": "testing", "total": 450, "inactive": false},
+	{"name": "testing2", "total": 150, "inactive": true},
+	{"name": "formatted?", "total": 21150, "inactive": false}
+]

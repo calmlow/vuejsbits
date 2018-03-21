@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link type="text/css" rel="stylesheet" href="//unpkg.com/bootstrap/dist/css/bootstrap.min.css"/>
+  <link type="text/css" rel="stylesheet" href="//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.css"/>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+	<meta charset="utf-8">
+	<title>Vue JS Bits</title>
+	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <script src="https://unpkg.com/vue-router"></script>
+  
+  <!-- Add this after vue.js -->
+  <!-- https://bootstrap-vue.js.org/docs/ -->
+  <script src="//unpkg.com/babel-polyfill@latest/dist/polyfill.min.js"></script>
+  <script src="//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-toggleable-md navbar-expand-lg navbar-light bg-faded">
+  <a class="navbar-brand" href="#/">VueJS Bits</a>
+  <ul class="navbar-nav ml-auto">
+    <!--<li class="nav-item active">-->
+    <li class="nav-item">
+      <a class="nav-link" href="#/todos/1"><i class="fa fa-list"></i> Test Link</a>
+    </li>
+  </ul>
+</nav>
+
+<!-- MAIN CONTENT AND INJECTED VIEWS -->
+<div class="container" id="app">
+  <router-view></router-view>
+
+  <hr/>
+  <p>
+    <em style="color:#999;">Vue version = {{ currentVersion}}</em>
+  </p>
+</div>
+
+</body>
+<script charset="UTF-8" src="./vc/main.component.js"></script>
+<script charset="UTF-8" src="./vc/todos.component.js"></script>
+<script src="./vue.router.js"></script>
+<script src="./vueapp.js"></script>
+
+</html>
